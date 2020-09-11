@@ -758,7 +758,7 @@ let GameManager = {
         audio.play();
         
         setTimeout(function(){
-        var audioVoice = new Audio('../music/hero-voices/' + enemy.enemySelect.toLowerCase() + 'voice.ogg');
+        var audioVoice = new Audio('../music/hero-voices/' + enemy.enemySelect.toLowerCase() + 'voice.mp3');
         audioVoice.play();
         }, 1600)
         

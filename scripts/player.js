@@ -77,11 +77,11 @@ let playerMoves = {
                 getEnemyHealth.innerHTML = 'HP                            &xrarr;          0';
                 getButton.style.pointerEvents = "none";
                 getButton.style.cursor = "url(../img/not-allowed.png), auto !important";
-                var audio = new Audio('../music/announcer/slain.ogg');
+                var audio = new Audio('../music/announcer/slain.mp3');
                     audio.play();
         
                 setTimeout(function(){
-                    var audioVoice = new Audio('../music/announcer/victory.ogg');
+                    var audioVoice = new Audio('../music/announcer/victory.mp3');
                     audioVoice.play();
                     }, 1600)
             } else {
@@ -99,11 +99,11 @@ let playerMoves = {
                         getEnemyHealth.innerHTML = 'HP                            &xrarr;          ' + enemy.HP;
                         getButton.style.pointerEvents = "none";
                         getButton.style.cursor = "url(../img/not-allowed.png), auto !important";
-                        var audio = new Audio('../music/announcer/slained.ogg');
+                        var audio = new Audio('../music/announcer/slained.mp3');
                     audio.play();
         
                 setTimeout(function(){
-                    var audioVoice = new Audio('../music/announcer/defeat.ogg');
+                    var audioVoice = new Audio('../music/announcer/defeat.mp3');
                     audioVoice.play();
                     }, 1600)
                     } else {
@@ -125,11 +125,11 @@ let playerMoves = {
                 getPlayerHealth.innerHTML = 'HP                            &xrarr;          0';
                 getButton.style.pointerEvents = "none";
                 getButton.style.cursor = "url(../img/not-allowed.png), auto !important";
-                var audio = new Audio('../music/announcer/slained.ogg');
+                var audio = new Audio('../music/announcer/slained.mp3');
                     audio.play();
         
                 setTimeout(function(){
-                    var audioVoice = new Audio('../music/announcer/defeat.ogg');
+                    var audioVoice = new Audio('../music/announcer/defeat.mp3');
                     audioVoice.play();
                 }, 1600)
             } else {
@@ -147,11 +147,11 @@ let playerMoves = {
                         getPlayerHealth.innerHTML = 'HP                            &xrarr;          ' + player.HP;
                         getButton.style.pointerEvents = "none";
                         getButton.style.cursor = "url(../img/not-allowed.png), auto !important";
-                        var audio = new Audio('../music/announcer/slain.ogg');
+                        var audio = new Audio('../music/announcer/slain.mp3');
                             audio.play();
         
                             setTimeout(function(){
-                            var audioVoice = new Audio('../music/announcer/victory.ogg');
+                            var audioVoice = new Audio('../music/announcer/victory.mp3');
                             audioVoice.play();
                             }, 1600)
                     } else { 
