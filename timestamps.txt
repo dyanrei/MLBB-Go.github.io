@@ -1,0 +1,191 @@
+Part 1
+0:27 Angela
+0:29 Lylia
+0:35 Estes
+0:37 Diggie
+0:39 Vale
+0:42 Rafaela
+0:44 Harith
+0:46 Faramis
+0:49 Aurora
+0:51 Lunox
+0:54 Change
+0:56 Valir
+0:58 Vexana
+1:00 Alice
+1:02 Kagura
+1:05 Pharsa
+1:07 Zhask
+1:09 Odette
+1:12 Gord
+1:14 Harley
+1:16 Kadita
+1:19 NaNa
+1:22 Eudora
+1:25 Cyclops
+1:27 Kimmy
+1:29 YSS
+1:32 Claude
+1:34 Irithel
+1:37 Hanabi
+1:39 Karrie
+1:42 Moscov
+1:45 Selena
+1:47 Bruno
+1:50 Helcurt
+1:52 Miya
+1:55 Karina
+1:58 Clint
+2:00 Fanny
+2:02 Layla
+2:05 Lancelot
+2:07 Hanzo
+2:11 Gusion
+2:13 Hayabusa
+2:16 Natalia
+2:18 Lesley
+2:20 Dyrroth
+2:22 Aldous
+2:25 Terizla
+2:29 Minsitthar
+2:31 Guinevere
+2:33 Thamuz
+2:35 Badang
+2:38 Jawhead
+2:40 Leomord
+2:43 Kaja
+2:45 Chou
+2:48 Martis
+2:51 Freya
+2:54 Alpha
+2:56 Ruby
+2:59 Sun
+3:02 Lapu-Lapu
+3:04 Argus
+3:07 Roger 
+3:09 Bane
+3:11 Alucard
+3:13 Khufra
+3:16 Zilong
+3:18 Esmeralda
+3:21 Hilda
+3:23 Gatotkaca
+3:25 Belerick
+3:29 Grock
+3:32 Hylos
+3:35 Johnson
+3:37 Lolita
+3:42 Akai
+3:44 Minotaur
+3:47 Uranus
+3:50 Franco
+3:53 Balmond
+3:56 Tigreal
+
+Part 2 
+1:04 Baxia
+1:09 Masha
+2:00 X.Borg
+2:06 Silvanna
+2:10 Saber
+2:15 Ling
+2:59 Granger
+3:04 Wanwan
+
+Category
+MM
+Bruno
+Lesley
+Claude
+Clint
+Moskov
+Granger
+Popol and Kupa
+Hanabi
+Irithel
+Wanwan
+Karrie
+Kimmy
+Yi Sun-Shin
+
+ASSASSIN
+Gusion
+Hanzo
+Hayabusa
+Helcurt
+Karina
+Lancelot
+Ling
+Selena
+Natalia
+
+FIGHTER
+Aldous
+Alpha
+Alucard
+Argus
+Badang
+Balmond
+Bane
+Dyrroth
+Freya
+Guinevere
+Jawhead
+Khaleed
+Lapu-Lapu
+Leomord
+Martis
+Masha
+Minsitthar
+Roger
+Ruby
+Silvanna
+Sun
+Thamuz
+Terizla
+X.Borg
+Yu Zhong
+
+MAGE
+Alice
+Aurora
+Cecilion
+Chang'e
+Cyclops
+Esmeralda
+Eudora
+Gord
+Harith
+Harley
+Kadita
+Kagura
+Lou Yi
+Lylia
+Odette
+Pharsa
+Vale
+Vexana
+Zhask
+
+TANK
+Akai
+Baxia
+Belerick
+Franco
+Gatotkaca
+Grock
+Hilda
+Hylos
+Johnson
+Khufra
+Lolita
+Minotaur
+Uranus
+
+SUPPORT
+Angela
+Carmilla
+Diggie
+Estes
+Nana
+Rafaela

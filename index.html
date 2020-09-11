@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="MLBB-Go!">
+        <title>MLBB-Go!</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="icon" href="img/logo-game.png" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+        <script src="scripts/player.js"></script>
+        <script src="scripts/enemy.js"></script>
+        <script src="scripts/select.js"></script>
+        <script src="scripts/gamemanager.js"></script>
+        <script>
+        function play() {
+            var audio = document.getElementById("audio");
+            audio.play();
+        }
+    </script>
+    </head>
+    <body>
+        <audio src="music/ml-announcer.mp3" autoplay></audio>
+        <div>
+            <img src="img/logo-game.png" alt="MLBB-Go! logo"  class="img-logo">
+        </div>
+        
+        <div class="header">
+            <p>Play your favorite MOBA inspired game on your browser!</p>
+            <br>
+            <h2>Choose hero role</h2>
+        </div>
+
+        <div class="class-interface">
+            <a href="javascript:delayMM('URL')" onclick="play()">
+            <audio id="audio" src="music/button-sound.mp3"></audio>
+                <img src="img/class/marksman.jpg">
+                <div class="class-interface-mm">
+                    <h3>Marksman</h3>
+                    <p>Marksman is a type of role that has a high attack/damage and critical and distance. When using this hero, be aware of its weakness, because this type of hero usually has low health and durability.</p>
+                </div>
+            </a>
+            <br>
+            <a href="javascript:delayAssa('URL')" onclick="play()">
+            <audio id="audio" src="music/button-sound.mp3"></audio>
+                <img src="img/class/assasin.jpg">
+                <div class="class-interface-ass">
+                    <h3>Assassin</h3>
+                    <p>Assassin is a type of role that has high burst damage, specializing in their attacks. This role has low durability and health.</p>
+                </div>
+            </a>
+            <br>
+            <a href="javascript:delayFighter('URL')" onclick="play()">
+            <audio id="audio" src="music/button-sound.mp3"></audio>
+                <img src="img/class/fighter.jpg">
+                <div class="class-interface-fighter">
+                    <h3>Fighter</h3>
+                    <p>Fighters are close range combatants that possess a mix of offensive and defensive capabilities. While they don't have as much utility as a tank or as much damage as an assassin.</p>
+                </div>
+            </a>
+            <br>
+            <a href="javascript:delayMage('URL')" onclick="play()">
+            <audio id="audio" src="music/button-sound.mp3"></audio>
+                <img src="img/class/mage.jpg">
+                <div class="class-interface-mage">
+                    <h3>Mage</h3>
+                    <p>Mage is a type of role that has high magic power and high CD in skills, specializing in dealing with magic damage with their skills. This role usually has low durability and health. Most heroes in this role have high burst damage.</p>
+                </div>
+            </a>
+            <br>
+            <a href="javascript:delayTank('URL')" onclick="play()">
+            <audio id="audio" src="music/button-sound.mp3"></audio>
+                <img src="img/class/tank.jpg">
+                <div class="class-interface-tank" >
+                    <h3>Tank</h3>
+                    <p>A tank is a type of role that is durable, has high HP and high defense while having a very low attack. They are naturallly bulky, higher natural HP, Magic Resistance, and Armor.</p>
+                </div>
+            </a>
+            <br>
+            <a href="javascript:delaySupp('URL')" onclick="play()">
+            <audio id="audio" src="music/button-sound.mp3"></audio>
+                <img src="img/class/support.jpg">
+                <div class="class-interface-supp">
+                    <h3>Support</h3>
+                    <p>Support is a type of role that has low attack damages and commonly relies on magic damage. When using this hero, be knowledgeable that it has low durability, making them look squishy.</p>
+                </div>
+            </a>
+            <br>
+            <a href="javascript:delayAll('URL')" onclick="play()">
+            <audio id="audio" src="music/button-sound.mp3"></audio>
+                <img src="img/class/allclasses.jpg">
+                <div class="class-interface-all">
+                    <h3>All Heroes</h3>
+                    <p>A Hero is a legendary being or person who has been summoned to wage battle in Mobile Legends Go!. As of July 31,2020 | Patch 1.4.94, there are currently 97 heroes in the original server, with the latest being <u>Khaleed | Desert Scimitar</u></p>
+                </div>
+            </a>
+        </div>
+        <hr class="hr-color">
+        <div class="footer">
+            <p> Dalangin, 2020</p>
+            <p class="moonton">&#169;<a href="https://m.mobilelegends.com/en"> Mobile Legends</a> &amp; <a href="https://www.moonton.com/#/home">Moonton</a></p>
+        </div>
+        
+        
+    </body>
+</html>

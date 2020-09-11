@@ -1,0 +1,747 @@
+
+img{
+    width: 10%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    cursor: url(../img/cursor.png), auto;
+}
+
+body{
+    margin-top: 10px;
+    background-color: #1b1b1b;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.img-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+}
+
+hr{
+    background-color: white;
+    border: none;
+    height: 1px;
+}
+
+.header {
+    background-color: #1b1b1b;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.header p {
+    font-style: italic;
+    font-family: arial;
+    font-size: 100%;
+    color: #fff;
+    padding-bottom: 4px;
+}
+
+.header h2 {
+    font-family: 'Chelsea Market', cursive;
+    font-size: 200%;
+    color: #f8b700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.header h1 {
+    font-family: 'Chelsea Market', cursive;
+    font-size: 300%;
+    color: #f8b700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.header h4 {
+    font-family: 'Chelsea Market', cursive;
+    font-size: 100%;
+    color: #f8b700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.header h6 {
+    font-family: 'Chelsea Market', cursive;
+    font-size: 100%;
+    color: orangered;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.header h6:hover {
+    text-decoration: underline;
+    cursor: url(../img/cursor2.png), auto !important;
+}
+
+.class-interface {
+    margin-top: 20px;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #1b1b1b;
+}
+
+.class-interface a {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.class-interface img {
+    width: 120px;
+    height: 150px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: url(../img/cursor2.png), auto !important;
+}
+
+.class-interface img:hover{
+    width: 130px;
+    height: 160px;
+}
+
+.class-interface div {
+    cursor: url(../img/cursor2.png), auto !important;
+}
+
+.class-interface-all {
+    margin-top: 20px;
+    width: 280px;
+    padding: 0 10px 0 20px;
+    background-color: #211510;
+    margin-right: 10px;
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: 105% 120%;
+    cursor: url(../img/cursor2.png), auto !important;
+    border-radius: 8px;
+}
+
+.class-interface-mm {
+    margin-top: 20px;
+    width: 280px;
+    padding: 0 10px 0 20px;
+    background-color: #211510;
+    margin-right: 10px;
+    background-image: url(../img/class/marksmanbg.png);
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: 105% 120%;
+    cursor: url(../img/cursor2.png), auto !important;
+    border-radius: 8px;
+}
+
+.class-interface-ass {
+    margin-top: 20px;
+    width: 280px;
+    padding: 0 10px 0 20px;
+    background-color: #211510;
+    margin-right: 10px;
+    background-image: url(../img/class/assassinbg.png);
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: 105% 120%;
+    cursor: url(../img/cursor2.png), auto !important;
+    border-radius: 8px;
+}
+
+.class-interface-fighter {
+    margin-top: 20px;
+    width: 280px;
+    padding: 0 10px 0 20px;
+    background-color: #211510;
+    margin-right: 10px;
+    background-image: url(../img/class/fighterbg.png);
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: 105% 120%;
+    cursor: url(../img/cursor2.png), auto !important;
+    border-radius: 8px;
+}
+
+.class-interface-mage {
+    margin-top: 20px;
+    width: 280px;
+    padding: 0 10px 0 20px;
+    background-color: #211510;
+    margin-right: 10px;
+    background-image: url(../img/class/magebg.png);
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: 105% 120%;
+    cursor: url(../img/cursor2.png), auto !important;
+    border-radius: 8px;
+}
+
+.class-interface-tank {
+    margin-top: 20px;
+    width: 280px;
+    padding: 0 10px 0 20px;
+    background-color: #211510;
+    margin-right: 10px;
+    background-image: url(../img/class/tankbg.png);
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: 105% 120%;
+    cursor: url(../img/cursor2.png), auto !important;
+    border-radius: 8px;
+}
+
+.class-interface-supp {
+    margin-top: 20px;
+    width: 280px;
+    padding: 0 10px 0 20px;
+    background-color: #211510;
+    margin-right: 10px;
+    background-image: url(../img/class/supportbg.png);
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: 105% 120%;
+    cursor: url(../img/cursor2.png), auto !important;
+    border-radius: 8px;
+}
+
+.class-interface-sword {
+    margin-top: 20px;
+    width: 280px;
+    padding: 0 10px 0 20px;
+    background-color: #211510;
+    margin-right: 10px;
+    background-image: url(../img/class/search.gif);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 105% 120%;
+    cursor: url(../img/cursor2.png), auto !important;
+    border-radius: 8px;
+}
+
+.class-interface-swordEnemy {
+    margin-top: 20px;
+    width: 280px;
+    padding: 0 10px 0 20px;
+    background-color: #211510;
+    margin-right: 10px;
+    background-image: url(../img/class/attack.gif);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 105% 120%;
+    cursor: url(../img/cursor2.png), auto !important;
+    border-radius: 8px;
+}
+
+.class-interface a:hover div {
+    background-color: #1c2c54;
+}
+
+.class-interface h3 {
+    font-family: 'Chelsea Market', cursive;
+    font-size: 22px;
+    color: #f8b700;
+    padding: 12px 0 4px;
+}
+
+.class-interface h3:hover {
+    text-decoration: underline;
+
+}
+
+.class-interface p {
+    font-family: arial;
+    font-size: 12px;
+    color: #d5c8af;
+    line-height: 20px;
+}
+
+
+.select-hero h3 {
+    font-family: 'Chelsea Market', cursive;
+    font-size: 22px;
+    color: #f8b700;
+    padding: 12px 0 4px;
+}
+
+.select-hero ul{
+    text-decoration: none;
+    list-style-type: none;
+}
+.select-hero ul li a{
+    font-family: arial;
+    font-size: 13px;
+    color: #d5c8af;
+    line-height: 20px;
+}
+
+.select-hero ul li{
+    font-family: arial;
+    font-size: 13px;
+    color: #d5c8af;
+    line-height: 20px;
+}
+
+.select-hero ul li a:hover{
+    font-size: 18px;
+}
+
+.whitespace{
+    white-space: pre;
+}
+
+.select-hero {
+    margin-top: 10%;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #1b1b1b;
+    visibility: visible;
+}
+
+.select-hero2 {
+    margin-top: 1%;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #1b1b1b;
+    visibility: visible;
+}
+
+.select-hero3 {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #1b1b1b;
+    visibility: visible;
+}
+
+/*selected hero*/
+.select-hero-float {
+    margin-left: 10%;
+    float: left;
+    margin-top: 20px;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #1b1b1b;
+}
+
+.select-hero a {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.select-hero img {
+    width: 150px;
+    height: 190px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: url(../img/cursor2.png), auto !important;
+}
+
+.select-hero img:hover{
+    width: 160px;
+    height: 200px;
+}
+
+.select-hero div {
+    cursor: url(../img/cursor2.png), auto !important;
+}
+
+.select-hero a:hover div {
+    background-color: #1c2c54;
+}
+
+.select-hero2 h3, .select-hero3 h3 {
+    font-family: 'Chelsea Market', cursive;
+    font-size: 22px;
+    color: #f8b700;
+    padding: 12px 0 4px;
+}
+
+/*enemy*/
+.select-hero2 ul, .select-hero3 ul{
+    text-decoration: none;
+    list-style-type: none;
+}
+.select-hero2 ul li a, .select-hero3 ul li a{
+    font-family: arial;
+    font-size: 13px;
+    color: #d5c8af;
+    line-height: 20px;
+}
+
+.select-hero2 ul li, .select-hero3 ul li{
+    font-family: arial;
+    font-size: 13px;
+    color: #d5c8af;
+    line-height: 20px;
+}
+
+.select-hero2 ul li a:hover, .select-hero3 ul li a:hover{
+    font-size: 18px;
+}
+
+
+.select-hero2 a, .select-hero3 a {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.select-hero2 img, .select-hero3 img {
+    width: 150px;
+    height: 190px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: url(../img/cursor2.png), auto !important;
+}
+
+.select-hero2 img:hover, .select-hero3 img:hover{
+    width: 160px;
+    height: 200px;
+}
+
+.select-hero2 div, .select-hero3 div {
+    cursor: url(../img/cursor2.png), auto !important;
+}
+
+.select-hero2 a:hover div, .select-hero3 a:hover div {
+    background-color: #1c2c54;
+}
+
+.mm-select {
+/*    margin-top: 20px;*/
+    width:  10px;
+    padding: 0 10px 0 20px;
+    background-color: #211510;
+    margin-right: 10px;
+    background-image: url(../img/class/marksmanbg.png);
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: 105% 120%;
+    cursor: url(../img/cursor2.png), auto !important;
+    border-radius: 8px;
+    visibility: hidden;
+}
+
+.assa-select {
+    margin-top: 20px;
+    width: 10px;
+    padding: 0 10px 0 20px;
+    background-color: #211510;
+    margin-right: 10px;
+    background-image: url(../img/class/assassinbg.png);
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: 105% 120%;
+    cursor: url(../img/cursor2.png), auto !important;
+    border-radius: 8px;
+    visibility: hidden;
+}
+
+.fighter-select {
+    margin-top: 20px;
+    width: 10px;
+    padding: 0 10px 0 20px;
+    background-color: #211510;
+    margin-right: 10px;
+    background-image: url(../img/class/fighterbg.png);
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: 105% 120%;
+    cursor: url(../img/cursor2.png), auto !important;
+    border-radius: 8px;
+    visibility: hidden;
+}
+
+.mage-select {
+    margin-top: 20px;
+    width: 10px;
+    padding: 0 10px 0 20px;
+    background-color: #211510;
+    margin-right: 10px;
+    background-image: url(../img/class/magebg.png);
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: 105% 120%;
+    cursor: url(../img/cursor2.png), auto !important;
+    border-radius: 8px;
+    visibility: hidden;
+}
+
+.tank-select {
+    margin-top: 20px;
+    width: 10px;
+    padding: 0 10px 0 20px;
+    background-color: #211510;
+    margin-right: 10px;
+    background-image: url(../img/class/tankbg.png);
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: 105% 120%;
+    cursor: url(../img/cursor2.png), auto !important;
+    border-radius: 8px;
+    visibility: hidden;
+}
+
+.supp-select {
+    margin-top: 20px;
+    width: 10px;
+    padding: 0 10px 0 20px;
+    background-color: #211510;
+    margin-right: 10px;
+    background-image: url(../img/class/supportbg.png);
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: 105% 120%;
+    cursor: url(../img/cursor2.png), auto !important;
+    border-radius: 8px;
+    visibility: hidden;
+}
+
+/*button search*/
+.btn-search {
+    border-radius: 4px;
+    background: linear-gradient(to bottom, #211510, #322018) !important;
+    border-radius: 8px;
+    border: none;
+    color: #f8b700;
+    text-align: center;
+    font-family: 'Chelsea Market', cursive; 
+    font-size: 25px;
+    padding: 15px;
+    width: 200px; 
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    font-weight: 600;
+    cursor: url(../img/searchcursor.png), auto !important;
+ }
+
+ .btn-search span {
+    cursor: url(../img/searchcursor.png), auto !important;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+ }
+
+ .btn-search span:after {
+    content: ' \1F50E';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+ }
+
+ .btn-search:hover span {
+    padding-right: 25px;
+ }
+
+ .btn-search:hover span:after {
+    opacity: 1;
+    right: 0;
+ }
+
+/*button fight*/
+.btn-fight {
+    border-radius: 4px;
+    background: linear-gradient(to bottom, #211510, #322018) !important;
+    border-radius: 8px;
+    border: none;
+    color: #f8b700;
+    text-align: center;
+    font-family: 'Chelsea Market', cursive; 
+    font-size: 25px;
+    padding: 15px;
+    width: 200px; 
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    font-weight: 600;
+    cursor: url(../img/attackcursor.png), auto !important;
+ }
+
+ .btn-fight span {
+    cursor: url(../img/attackcursor.png), auto !important;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+ }
+
+ .btn-fight span:after {
+    content: ' \2694';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+ }
+
+ .btn-fight:hover span {
+    padding-right: 25px;
+ }
+
+ .btn-fight:hover span:after {
+    opacity: 1;
+    right: 0;
+ }
+
+/*search bar*/
+::placeholder{
+    font-family: 'Chelsea Market', cursive;
+}
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.searchTerm {
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%;
+    border: 3px solid #f8b700;
+    border-right: none;
+    padding: 5px;
+    height: 25px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+    cursor: url(../img/searchcursor.png), auto !important;
+}
+
+.searchTerm:focus{
+    font-size: 15px;
+    font-family: 'Chelsea Market', cursive;
+    color: #1b1b1b;
+}
+
+.searchButton {
+    width: 40px;
+    border: 1px solid #f8b700;
+    background: #f8b700;
+    text-align: center; 
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: url(../img/searchcursor.png), auto !important;
+    font-size: 20px;
+}
+
+.wrap{
+    width: 30%;
+    position: absolute;
+    margin-top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: visible;
+}
+
+.speaker{
+    color: whitesmoke;
+    cursor: url(../img/cursor2.png), auto !important;
+    visibility: visible;
+}
+
+.speaker:hover{
+    color: #f8b700;
+}
+
+.attackResult{
+    text-align: center;
+    font-family: 'Chelsea Market', cursive;
+    font-size: 100%;
+    color: #f8b700;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.attackResult p span{
+    text-align: center;
+    display:inline;
+    color: orangered;
+    font-size: 130%;
+}
+
+.attackResultEnemy{
+    text-align: center;
+    font-family: 'Chelsea Market', cursive;
+    font-size: 100%;
+    color: #f8b700;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.attackResultEnemy p span{
+    text-align: center;
+    display:inline;
+    color: orangered;
+    font-size: 130%;
+}
+
+hr.hr-color {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-bottom: 0.1px solid #f8b700;
+}
+
+.footer p{
+    margin-top: 1%;
+    text-align: center;
+    font-family: arial;
+    font-size: 100%;
+    color: azure;
+    font-style: italic;
+}
+
+.footer p.moonton{
+    margin-top: 1%;
+    font-family: arial;
+    font-size: 80%;
+    color: azure;
+    margin-bottom: 2%;
+}
+
+.footer p.moonton a{
+    color: #f8b700;
+}
+
+.footer p.moonton a:hover{
+    color: orangered;
+    text-decoration: underline;
+    cursor: url(../img/cursor2.png), auto !important;
+}

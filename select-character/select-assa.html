@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="MLBB-Go!">
+        <title>MLBB-Go!</title>
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <link rel="icon" href="../img/logo-game.png" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../scripts/player.js"></script>
+        <script src="../scripts/enemy.js"></script>
+        <script src="../scripts/select.js"></script>
+        <script src="../scripts/gamemanager.js"></script>
+    </head>
+    <body id="body">
+        <div>
+            <img src="../img/logo-game.png" alt="MLBB-Go! logo"  class="img-logo">
+        </div>
+        
+        <div class="header">
+            <p>Play your favorite MOBA inspired game on your browser!</p>
+            <br>
+            <h2>Select your hero</h2>
+            <a href="../index.html"><h6>&lt;&lt;Go back to main menu&lt;&lt;</h6></a>
+        </div>
+        
+        <div class="attackResult"></div>
+        <div class="attackResultEnemy"></div>
+        
+        <div class="wrap">
+            <div class="search">
+              <input type="text" class="searchTerm" placeholder="Search Hero" id="searchFor" autocomplete="off">
+              <button type="submit" class="searchButton">
+                <i class="fa fa-search"></i>
+             </button>
+            </div>
+        </div>
+        
+        <div class="select-hero">
+            <a href="#" onclick="GameManager.setGameStart('Alucard'); myPlay();">
+                <div>
+                <img src="../img/fighter/alucard.jpg" title="Alucard" class="images">
+                <div><a id="voice" class="speaker" title="Alucard" onclick="playAudio('../music/hero-voices/alucardvoice.ogg')">&#128266;</a></div>
+                </div>
+                <div class="fighter-select">
+                    <h3>Alucard</h3>
+                    <ul>
+                        <li><a class="whitespace">HP                            &xrarr;          2708</a></li>
+                        <li><a class="whitespace">Physical Attack         &xrarr;          121</a></li>
+                        <li><a class="whitespace">Magic Power            &xrarr;           0</a></li>
+                        <li><a class="whitespace">Physical Defense     &xrarr;           23</a></li>
+                        <li><a class="whitespace">Magic Resistance    &xrarr;           10</a></li>
+                        <li><a class="whitespace">Attack Speed           &xrarr;           0.845</a></li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#" onclick="GameManager.setGameStart('Fanny'); myPlay();">
+                <div>
+                <img src="../img/assasin/fanny.jpg" title="Fanny" class="images">
+                    <div><a id="voice" class="speaker" title="Fanny" onclick="playAudio('../music/hero-voices/fannyvoice.ogg')">&#128266;</a></div>
+                </div>
+                <div class="assa-select">
+                    <h3>Fanny</h3>
+                    <ul>
+                        <li><a class="whitespace">HP                            &xrarr;          2526</a></li>
+                        <li><a class="whitespace">Physical Attack         &xrarr;          126</a></li>
+                        <li><a class="whitespace">Magic Power            &xrarr;           0</a></li>
+                        <li><a class="whitespace">Physical Defense     &xrarr;           17</a></li>
+                        <li><a class="whitespace">Magic Resistance    &xrarr;           10</a></li>
+                        <li><a class="whitespace">Attack Speed           &xrarr;           0.891</a></li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#" onclick="GameManager.setGameStart('Gusion'); myPlay();">
+                <div>
+                <img src="../img/assasin/gusion.jpg" title="Gusion" class="images">
+                    <div><a id="voice" class="speaker" title="Gusion" onclick="playAudio('../music/hero-voices/gusionvoice.ogg')">&#128266;</a></div>
+                </div>
+                <div class="assa-select">
+                    <h3>Gusion</h3>
+                    <ul>
+                        <li><a class="whitespace">HP                            &xrarr;          2526</a></li>
+                        <li><a class="whitespace">Physical Attack         &xrarr;          126</a></li>
+                        <li><a class="whitespace">Magic Power            &xrarr;           0</a></li>
+                        <li><a class="whitespace">Physical Defense     &xrarr;           17</a></li>
+                        <li><a class="whitespace">Magic Resistance    &xrarr;           10</a></li>
+                        <li><a class="whitespace">Attack Speed           &xrarr;           0.891</a></li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#" onclick="GameManager.setGameStart('Hanzo'); myPlay();">
+                <div>
+                <img src="../img/assasin/hanzo.jpg" title="Hanzo" class="images">
+                    <div><a id="voice" class="speaker" title="Hanzo" onclick="playAudio('../music/hero-voices/hanzovoice.ogg')">&#128266;</a></div>
+                </div>
+                <div class="assa-select">
+                    <h3>Hanzo</h3>
+                    <ul>
+                        <li><a class="whitespace">HP                            &xrarr;          2599</a></li>
+                        <li><a class="whitespace">Physical Attack         &xrarr;          118</a></li>
+                        <li><a class="whitespace">Magic Power            &xrarr;           0</a></li>
+                        <li><a class="whitespace">Physical Defense     &xrarr;           17</a></li>
+                        <li><a class="whitespace">Magic Resistance    &xrarr;           10</a></li>
+                        <li><a class="whitespace">Attack Speed           &xrarr;           0.872</a></li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#" onclick="GameManager.setGameStart('Harley'); myPlay();">
+                <div>
+                <img src="../img/mage/harley.jpg" title="Harley" class="images">
+                <div><a id="voice" class="speaker" title="Harley" onclick="playAudio('../music/hero-voices/harleyvoice.ogg')">&#128266;</a></div>
+                </div>
+                <div class="mage-select">
+                    <h3>Harley</h3>
+                    <ul>
+                        <li><a class="whitespace">HP                            &xrarr;          2521</a></li>
+                        <li><a class="whitespace">Physical Attack         &xrarr;          115</a></li>
+                        <li><a class="whitespace">Magic Power            &xrarr;           18</a></li>
+                        <li><a class="whitespace">Physical Defense     &xrarr;           15</a></li>
+                        <li><a class="whitespace">Magic Resistance    &xrarr;           10</a></li>
+                        <li><a class="whitespace">Attack Speed           &xrarr;           0.816</a></li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#" onclick="GameManager.setGameStart('Hayabusa'); myPlay();">
+                <div>
+                <img src="../img/assasin/hayabusa.jpg" title="Hayabusa" class="images">
+                    <div><a id="voice" class="speaker" title="Hayabusa" onclick="playAudio('../music/hero-voices/hayabusavoice.ogg')">&#128266;</a></div>
+                </div>
+                <div class="assa-select">
+                    <h3>Hayabusa</h3>
+                    <ul>
+                        <li><a class="whitespace">HP                            &xrarr;          2526</a></li>
+                        <li><a class="whitespace">Physical Attack         &xrarr;          126</a></li>
+                        <li><a class="whitespace">Magic Power            &xrarr;           0</a></li>
+                        <li><a class="whitespace">Physical Defense     &xrarr;           17</a></li>
+                        <li><a class="whitespace">Magic Resistance    &xrarr;           10</a></li>
+                        <li><a class="whitespace">Attack Speed           &xrarr;           0.891</a></li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#" onclick="GameManager.setGameStart('Helcurt'); myPlay();">
+                <div>
+                <img src="../img/assasin/helcurt.jpg" title="Helcurt" class="images">
+                    <div><a id="voice" class="speaker" title="Helcurt" onclick="playAudio('../music/hero-voices/helcurtvoice.ogg')">&#128266;</a></div>
+                </div>
+                <div class="assa-select">
+                    <h3>Helcurt</h3>
+                    <ul>
+                        <li><a class="whitespace">HP                            &xrarr;          2599</a></li>
+                        <li><a class="whitespace">Physical Attack         &xrarr;          118</a></li>
+                        <li><a class="whitespace">Magic Power            &xrarr;           0</a></li>
+                        <li><a class="whitespace">Physical Defense     &xrarr;           17</a></li>
+                        <li><a class="whitespace">Magic Resistance    &xrarr;           10</a></li>
+                        <li><a class="whitespace">Attack Speed           &xrarr;           0.872</a></li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#" onclick="GameManager.setGameStart('Kadita'); myPlay();">
+                <div>
+                <img src="../img/mage/kadita.jpg" title="Kadita" class="images">
+                <div><a id="voice" class="speaker" title="Kadita" onclick="playAudio('../music/hero-voices/kaditavoice.ogg')">&#128266;</a></div>
+                </div>
+                <div class="mage-select">
+                    <h3>Kadita</h3>
+                    <ul>
+                        <li><a class="whitespace">HP                            &xrarr;          2516</a></li>
+                        <li><a class="whitespace">Physical Attack         &xrarr;          110</a></li>
+                        <li><a class="whitespace">Magic Power            &xrarr;           15</a></li>
+                        <li><a class="whitespace">Physical Defense     &xrarr;           18</a></li>
+                        <li><a class="whitespace">Magic Resistance    &xrarr;           10</a></li>
+                        <li><a class="whitespace">Attack Speed           &xrarr;           0.823</a></li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#" onclick="GameManager.setGameStart('Karina'); myPlay();">
+                <div>
+                <img src="../img/assasin/karina.jpg" title="Karina" class="images">
+                    <div><a id="voice" class="speaker" title="Karina" onclick="playAudio('../music/hero-voices/karinavoice.ogg')">&#128266;</a></div>
+                </div>
+                <div class="assa-select">
+                    <h3>Karina</h3>
+                    <ul>
+                        <li><a class="whitespace">HP                            &xrarr;          2526</a></li>
+                        <li><a class="whitespace">Physical Attack         &xrarr;          126</a></li>
+                        <li><a class="whitespace">Magic Power            &xrarr;           0</a></li>
+                        <li><a class="whitespace">Physical Defense     &xrarr;           17</a></li>
+                        <li><a class="whitespace">Magic Resistance    &xrarr;           10</a></li>
+                        <li><a class="whitespace">Attack Speed           &xrarr;           0.891</a></li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#" onclick="GameManager.setGameStart('Lancelot'); myPlay();">
+                <div>
+                <img src="../img/assasin/lancelot.jpg" title="Lancelot" class="images">
+                    <div><a id="voice" class="speaker" title="Lancelot" onclick="playAudio('../music/hero-voices/lancelotvoice.ogg')">&#128266;</a></div>
+                </div>
+                <div class="assa-select">
+                    <h3>Lancelot</h3>
+                    <ul>
+                        <li><a class="whitespace">HP                            &xrarr;          2599</a></li>
+                        <li><a class="whitespace">Physical Attack         &xrarr;          118</a></li>
+                        <li><a class="whitespace">Magic Power            &xrarr;           0</a></li>
+                        <li><a class="whitespace">Physical Defense     &xrarr;           17</a></li>
+                        <li><a class="whitespace">Magic Resistance    &xrarr;           10</a></li>
+                        <li><a class="whitespace">Attack Speed           &xrarr;           0.872</a></li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#" onclick="GameManager.setGameStart('Lapu-Lapu'); myPlay();">
+                <div>
+                <img src="../img/fighter/lapu-lapu.jpg" title="Lapu-Lapu" class="images">
+                <div><a id="voice" class="speaker" title="Lapu-Lapu" onclick="playAudio('../music/hero-voices/lapu-lapuvoice.ogg')">&#128266;</a></div>
+                </div>
+                <div class="fighter-select">
+                    <h3>Lapu-Lapu</h3>
+                    <ul>
+                        <li><a class="whitespace">HP                            &xrarr;          2708</a></li>
+                        <li><a class="whitespace">Physical Attack         &xrarr;          121</a></li>
+                        <li><a class="whitespace">Magic Power            &xrarr;           0</a></li>
+                        <li><a class="whitespace">Physical Defense     &xrarr;           23</a></li>
+                        <li><a class="whitespace">Magic Resistance    &xrarr;           10</a></li>
+                        <li><a class="whitespace">Attack Speed           &xrarr;           0.845</a></li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#" onclick="GameManager.setGameStart('Lesley'); myPlay();">
+                <div>
+                <img src="../img/marksman/lesley.jpg" title="Lesley" class="images">
+                    <div><a id="voice" class="speaker" title="Lesley" title="Miya" onclick="playAudio('../music/hero-voices/lesleyvoice.ogg')">&#128266;</a></div>
+                </div>
+                <div class="mm-select">
+                    <h3>Lesley</h3>
+                    <ul>
+                        <li><a class="whitespace">HP                            &xrarr;          2500</a></li>
+                        <li><a class="whitespace">Physical Attack         &xrarr;          130</a></li>
+                        <li><a class="whitespace">Magic Power            &xrarr;           0</a></li>
+                        <li><a class="whitespace">Physical Defense     &xrarr;           15</a></li>
+                        <li><a class="whitespace">Magic Resistance    &xrarr;           10</a></li>
+                        <li><a class="whitespace">Attack Speed           &xrarr;           0.882</a></li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#" onclick="GameManager.setGameStart('Ling'); myPlay();">
+                <div>
+                <img src="../img/assasin/ling.jpg" title="Ling" class="images">
+                    <div><a id="voice" class="speaker" title="Ling" onclick="playAudio('../music/hero-voices/lingvoice.ogg')">&#128266;</a></div>
+                </div>
+                <div class="assa-select">
+                    <h3>Ling</h3>
+                    <ul>
+                        <li><a class="whitespace">HP                            &xrarr;          2526</a></li>
+                        <li><a class="whitespace">Physical Attack         &xrarr;          126</a></li>
+                        <li><a class="whitespace">Magic Power            &xrarr;           0</a></li>
+                        <li><a class="whitespace">Physical Defense     &xrarr;           17</a></li>
+                        <li><a class="whitespace">Magic Resistance    &xrarr;           10</a></li>
+                        <li><a class="whitespace">Attack Speed           &xrarr;           0.891</a></li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#" onclick="GameManager.setGameStart('Natalia'); myPlay();">
+                <div>
+                <img src="../img/assasin/natalia.jpg" title="Natalia" class="images">
+                    <div><a id="voice" class="speaker" title="Natalia" onclick="playAudio('../music/hero-voices/nataliavoice.ogg')">&#128266;</a></div>
+                </div>
+                <div class="assa-select">
+                    <h3>Natalia</h3>
+                    <ul>
+                        <li><a class="whitespace">HP                            &xrarr;          2599</a></li>
+                        <li><a class="whitespace">Physical Attack         &xrarr;          118</a></li>
+                        <li><a class="whitespace">Magic Power            &xrarr;           0</a></li>
+                        <li><a class="whitespace">Physical Defense     &xrarr;           17</a></li>
+                        <li><a class="whitespace">Magic Resistance    &xrarr;           10</a></li>
+                        <li><a class="whitespace">Attack Speed           &xrarr;           0.872</a></li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#" onclick="GameManager.setGameStart('Saber'); myPlay();">
+                <div>
+                <img src="../img/assasin/saber.jpg" title="Saber" class="images">
+                    <div><a id="voice" class="speaker" title="Saber" onclick="playAudio('../music/hero-voices/sabervoice.ogg')">&#128266;</a></div>
+                </div>
+                <div class="assa-select">
+                    <h3>Saber</h3>
+                    <ul>
+                        <li><a class="whitespace">HP                            &xrarr;          2599</a></li>
+                        <li><a class="whitespace">Physical Attack         &xrarr;          118</a></li>
+                        <li><a class="whitespace">Magic Power            &xrarr;           0</a></li>
+                        <li><a class="whitespace">Physical Defense     &xrarr;           17</a></li>
+                        <li><a class="whitespace">Magic Resistance    &xrarr;           10</a></li>
+                        <li><a class="whitespace">Attack Speed           &xrarr;           0.872</a></li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#" onclick="GameManager.setGameStart('Selena'); myPlay();">
+                <div>
+                <img src="../img/assasin/selena.jpg" title="Selena" class="images">
+                    <div><a id="voice" class="speaker" title="Selena" onclick="playAudio('../music/hero-voices/selenavoice.ogg')">&#128266;</a></div>
+                </div>
+                <div class="assa-select">
+                    <h3>Selena</h3>
+                    <ul>
+                        <li><a class="whitespace">HP                            &xrarr;          2599</a></li>
+                        <li><a class="whitespace">Physical Attack         &xrarr;          118</a></li>
+                        <li><a class="whitespace">Magic Power            &xrarr;           0</a></li>
+                        <li><a class="whitespace">Physical Defense     &xrarr;           17</a></li>
+                        <li><a class="whitespace">Magic Resistance    &xrarr;           10</a></li>
+                        <li><a class="whitespace">Attack Speed           &xrarr;           0.872</a></li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#" onclick="GameManager.setGameStart('Yi Sun-Shin'); myPlay();">
+                <div>
+                <img src="../img/marksman/yi%20sun-shin.jpg" title="Yi Sun-Shin (YSS)" class="images">
+                    <div><a id="voice" class="speaker" title="Yi Sun-Shin" onclick="playAudio('../music/hero-voices/yi sun-shinvoice.ogg')">&#128266;</a></div>
+                </div>
+                <div class="mm-select">
+                    <h3>Yi Sun-Shin</h3>
+                    <ul>
+                        <li><a class="whitespace">HP                            &xrarr;          2500</a></li>
+                        <li><a class="whitespace">Physical Attack         &xrarr;          130</a></li>
+                        <li><a class="whitespace">Magic Power            &xrarr;           0</a></li>
+                        <li><a class="whitespace">Physical Defense     &xrarr;           15</a></li>
+                        <li><a class="whitespace">Magic Resistance    &xrarr;           10</a></li>
+                        <li><a class="whitespace">Attack Speed           &xrarr;           0.882</a></li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#" onclick="GameManager.setGameStart('Zilong'); myPlay();">
+                <div>
+                <img src="../img/fighter/zilong.jpg" title="Zilong" class="images">
+                <div><a id="voice" class="speaker" title="Zilong" onclick="playAudio('../music/hero-voices/zilongvoice.ogg')">&#128266;</a></div>
+                </div>
+                <div class="fighter-select">
+                    <h3>Zilong</h3>
+                    <ul>
+                        <li><a class="whitespace">HP                            &xrarr;          2689</a></li>
+                        <li><a class="whitespace">Physical Attack         &xrarr;          123</a></li>
+                        <li><a class="whitespace">Magic Power            &xrarr;           0</a></li>
+                        <li><a class="whitespace">Physical Defense     &xrarr;           25</a></li>
+                        <li><a class="whitespace">Magic Resistance    &xrarr;           10</a></li>
+                        <li><a class="whitespace">Attack Speed           &xrarr;           0.962</a></li>
+                    </ul>
+                </div>
+            </a>
+        </div>
+        <div class="action-btn">
+        </div>
+        <div class="enemy">
+        </div>
+        <hr class="hr-color">
+        <div class="footer">
+            <p> Dalangin, 2020</p>
+            <p class="moonton">&#169;<a href="https://m.mobilelegends.com/en"> Mobile Legends</a> &amp; <a href="https://www.moonton.com/#/home">Moonton</a></p>
+        </div>
+        
+    </body>
+</html>

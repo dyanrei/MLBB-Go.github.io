@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="MLBB-Go!">
+        <title>MLBB-Go!</title>
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <link rel="icon" href="../img/logo-game.png" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../scripts/player.js"></script>
+        <script src="../scripts/enemy.js"></script>
+        <script src="../scripts/select.js"></script>
+        <script src="../scripts/gamemanager.js"></script>
+    </head>
+    <body id="body">
+        <div>
+            <img src="../img/logo-game.png" alt="MLBB-Go! logo"  class="img-logo">
+        </div>
+        
+        <div class="header">
+            <p>Play your favorite MOBA inspired game on your browser!</p>
+            <br>
+            <h2>Select your hero</h2>
+            <a href="../index.html"><h6>&lt;&lt;Go back to main menu&lt;&lt;</h6></a>
+        </div>
+        
+        <div class="attackResult"></div>
+        <div class="attackResultEnemy"></div>
+        
+        <div class="wrap">
+            <div class="search">
+              <input type="text" class="searchTerm" placeholder="Search Hero" id="searchFor" autocomplete="off">
+              <button type="submit" class="searchButton">
+                <i class="fa fa-search"></i>
+             </button>
+            </div>
+        </div>
+        
+        <div class="select-hero">
+            <a href="#" onclick="GameManager.setGameStart('Akai'); myPlay();">
+                <div>
+                <img src="../img/tank/akai.jpg" title="Akai" class="images">
+                <div><a id="voice" class="speaker" title="Akai" onclick="playAudio('../music/hero-voices/akaivoice.ogg')">&#128266;</a></div>
+                </div>
+                <div class="tank-select">
+                    <h3>Akai</h3>
+                    <ul>
+                        <li><a class="whitespace">HP                            &xrarr;          2890</a></li>
+                        <li><a class="whitespace">Physical Attack         &xrarr;          112</a></li>
+                        <li><a class="whitespace">Magic Power            &xrarr;           0</a></li>
+                        <li><a class="whitespace">Physical Defense     &xrarr;           25</a></li>
+                        <li><a class="whitespace">Magic Resistance    &xrarr;           15</a></li>
+                        <li><a class="whitespace">Attack Speed           &xrarr;           0.826</a></li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#" onclick="GameManager.setGameStart('Alice'); myPlay();">
+                <div>
+                <img src="../img/mage/alice.jpg" title="Alice" class="images">
+                <div><a id="voice" class="speaker" title="Alice" onclick="playAudio('../music/hero-voices/alicevoice.ogg')">&#128266;</a></div>
+                </div>
+                <div class="mage-select">
+                    <h3>Alice</h3>
+                    <ul>
+                        <li><a class="whitespace">HP                            &xrarr;          2516</a></li>
+                        <li><a class="whitespace">Physical Attack         &xrarr;          110</a></li>
+                        <li><a class="whitespace">Magic Power            &xrarr;           15</a></li>
+                        <li><a class="whitespace">Physical Defense     &xrarr;           18</a></li>
+                        <li><a class="whitespace">Magic Resistance    &xrarr;           10</a></li>
+                        <li><a class="whitespace">Attack Speed           &xrarr;           0.823</a></li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#" onclick="GameManager.setGameStart('Atlas'); myPlay();">
+                <div>
+                <img src="../img/tank/atlas.jpg" title="Atlas" class="images">
+                <div><a id="voice" class="speaker" title="Atlas" onclick="playAudio('../music/hero-voices/atlasvoice.ogg')">&#128266;</a></div>
+                </div>
+                <div class="tank-select">
+                    <h3>Atlas</h3>
+                    <ul>
+                        <li><a class="whitespace">HP                            &xrarr;          2819</a></li>
+                        <li><a class="whitespace">Physical Attack         &xrarr;          135</a></li>
+                        <li><a class="whitespace">Magic Power            &xrarr;           0</a></li>
+                        <li><a class="whitespace">Physical Defense     &xrarr;           21</a></li>
+                        <li><a class="whitespace">Magic Resistance    &xrarr;           15</a></li>
+                        <li><a class="whitespace">Attack Speed           &xrarr;           0.792</a></li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#" onclick="GameManager.setGameStart('Balmond'); myPlay();">
+                <div>
+                <img src="../img/fighter/balmond.jpg" title="Balmond" class="images">
+                <div><a id="voice" class="speaker" title="Balmond" onclick="playAudio('../music/hero-voices/balmondvoice.ogg')">&#128266;</a></div>
+                </div>
+                <div class="fighter-select">
+                    <h3>Balmond</h3>
+                    <ul>
+                        <li><a class="whitespace">HP                            &xrarr;          2689</a></li>
+                        <li><a class="whitespace">Physical Attack         &xrarr;          123</a></li>
+                        <li><a class="whitespace">Magic Power            &xrarr;           0</a></li>
+                        <li><a class="whitespace">Physical Defense     &xrarr;           25</a></li>
+                        <li><a class="whitespace">Magic Resistance    &xrarr;           10</a></li>
+                        <li><a class="whitespace">Attack Speed           &xrarr;           0.962</a></li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#" onclick="GameManager.setGameStart('Baxia'); myPlay();">
+                <div>
+                <img src="../img/tank/baxia.jpg" title="Baxia" class="images">
+                <div><a id="voice" class="speaker" title="Baxia" onclick="playAudio('../music/hero-voices/baxiavoice.ogg')">&#128266;</a></div>
+                </div>
+                <div class="tank-select">
+                    <h3>Baxia</h3>
+                    <ul>
+                        <li><a class="whitespace">HP                            &xrarr;          2819</a></li>
+                        <li><a class="whitespace">Physical Attack         &xrarr;          135</a></li>
+                        <li><a class="whitespace">Magic Power            &xrarr;           0</a></li>
+                        <li><a class="whitespace">Physical Defense     &xrarr;           21</a></li>
+                        <li><a class="whitespace">Magic Resistance    &xrarr;           15</a></li>
+                        <li><a class="whitespace">Attack Speed           &xrarr;           0.792</a></li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#" onclick="GameManager.setGameStart('Belerick'); myPlay();">
+                <div>
+                <img src="../img/tank/belerick.jpg" title="Belerick" class="images">
+                <div><a id="voice" class="speaker" title="Belerick" onclick="playAudio('../music/hero-voices/belerickvoice.ogg')">&#128266;</a></div>
+                </div>
+
+                <div class="tank-select">
+                    <h3>Belerick</h3>
+                    <ul>
+                        <li><a class="whitespace">HP                            &xrarr;          2890</a></li>
+                        <li><a class="whitespace">Physical Attack         &xrarr;          112</a></li>
+                        <li><a class="whitespace">Magic Power            &xrarr;           0</a></li>
+                        <li><a class="whitespace">Physical Defense     &xrarr;           25</a></li>
+                        <li><a class="whitespace">Magic Resistance    &xrarr;           15</a></li>
+                        <li><a class="whitespace">Attack Speed           &xrarr;           0.826</a></li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#" onclick="GameManager.setGameStart('Esmeralda'); myPlay();">
+                <div>
+                <img src="../img/mage/esmeralda.jpg" title="Esmeralda" class="images">
+                <div><a id="voice" class="speaker" title="Esmeralda" onclick="playAudio('../music/hero-voices/esmeraldavoice.ogg')">&#128266;</a></div>
+                </div>
+                <div class="mage-select">
+                    <h3>Esmeralda</h3>
+                    <ul>
+                        <li><a class="whitespace">HP                            &xrarr;          2521</a></li>
+                        <li><a class="whitespace">Physical Attack         &xrarr;          115</a></li>
+                        <li><a class="whitespace">Magic Power            &xrarr;           18</a></li>
+                        <li><a class="whitespace">Physical Defense     &xrarr;           15</a></li>
+                        <li><a class="whitespace">Magic Resistance    &xrarr;           10</a></li>
+                        <li><a class="whitespace">Attack Speed           &xrarr;           0.816</a></li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#" onclick="GameManager.setGameStart('Franco'); myPlay();">
+                <div>
+                <img src="../img/tank/franco.jpg" title="Franco" class="images">
+                <div><a id="voice" class="speaker" title="Franco" onclick="playAudio('../music/hero-voices/francovoice.ogg')">&#128266;</a></div>
+                </div>
+                <div class="tank-select">
+                    <h3>Franco</h3>
+                    <ul>
+                        <li><a class="whitespace">HP                            &xrarr;          2819</a></li>
+                        <li><a class="whitespace">Physical Attack         &xrarr;          135</a></li>
+                        <li><a class="whitespace">Magic Power            &xrarr;           0</a></li>
+                        <li><a class="whitespace">Physical Defense     &xrarr;           21</a></li>
+                        <li><a class="whitespace">Magic Resistance    &xrarr;           15</a></li>
+                        <li><a class="whitespace">Attack Speed           &xrarr;           0.792</a></li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#" onclick="GameManager.setGameStart('Gatotkaca'); myPlay();">
+                <div>
+                <img src="../img/tank/gatotkaca.jpg" title="Gatotkaca" class="images">
+                <div><a id="voice" class="speaker" title="Gatotkaca" onclick="playAudio('../music/hero-voices/gatotkacavoice.ogg')">&#128266;</a></div>
+                </div>
+                <div class="tank-select">
+                    <h3>Gatotkaca</h3>
+                    <ul>
+                        <li><a class="whitespace">HP                            &xrarr;          2890</a></li>
+                        <li><a class="whitespace">Physical Attack         &xrarr;          112</a></li>
+                        <li><a class="whitespace">Magic Power            &xrarr;           0</a></li>
+                        <li><a class="whitespace">Physical Defense     &xrarr;           25</a></li>
+                        <li><a class="whitespace">Magic Resistance    &xrarr;           15</a></li>
+                        <li><a class="whitespace">Attack Speed           &xrarr;           0.826</a></li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#" onclick="GameManager.setGameStart('Grock'); myPlay();">
+                <div>
+                <img src="../img/tank/grock.jpg" title="Grock" class="images">
+                <div><a id="voice" class="speaker" title="Grock" onclick="playAudio('../music/hero-voices/grockvoice.ogg')">&#128266;</a></div>
+                </div>
+                <div class="tank-select">
+                    <h3>Grock</h3>
+                    <ul>
+                        <li><a class="whitespace">HP                            &xrarr;          2819</a></li>
+                        <li><a class="whitespace">Physical Attack         &xrarr;          135</a></li>
+                        <li><a class="whitespace">Magic Power            &xrarr;           0</a></li>
+                        <li><a class="whitespace">Physical Defense     &xrarr;           21</a></li>
+                        <li><a class="whitespace">Magic Resistance    &xrarr;           15</a></li>
+                        <li><a class="whitespace">Attack Speed           &xrarr;           0.792</a></li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#" onclick="GameManager.setGameStart('Hilda'); myPlay();">
+                <div>
+                <img src="../img/tank/hilda.jpg" title="Hilda" class="images">
+                <div><a id="voice" class="speaker" title="Hilda" onclick="playAudio('../music/hero-voices/hildavoice.ogg')">&#128266;</a></div>
+                </div>
+                <div class="tank-select">
+                    <h3>Hilda</h3>
+                    <ul>
+                        <li><a class="whitespace">HP                            &xrarr;          2890</a></li>
+                        <li><a class="whitespace">Physical Attack         &xrarr;          112</a></li>
+                        <li><a class="whitespace">Magic Power            &xrarr;           0</a></li>
+                        <li><a class="whitespace">Physical Defense     &xrarr;           25</a></li>
+                        <li><a class="whitespace">Magic Resistance    &xrarr;           15</a></li>
+                        <li><a class="whitespace">Attack Speed           &xrarr;           0.826</a></li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#" onclick="GameManager.setGameStart('Hylos'); myPlay();">
+                <div>
+                <img src="../img/tank/hylos.jpg" title="Hylos" class="images">
+                <div><a id="voice" class="speaker" title="Hylos" onclick="playAudio('../music/hero-voices/hylosvoice.ogg')">&#128266;</a></div>
+                </div>
+                <div class="tank-select">
+                    <h3>Hylos</h3>
+                    <ul>
+                        <li><a class="whitespace">HP                            &xrarr;          2819</a></li>
+                        <li><a class="whitespace">Physical Attack         &xrarr;          135</a></li>
+                        <li><a class="whitespace">Magic Power            &xrarr;           0</a></li>
+                        <li><a class="whitespace">Physical Defense     &xrarr;           21</a></li>
+                        <li><a class="whitespace">Magic Resistance    &xrarr;           15</a></li>
+                        <li><a class="whitespace">Attack Speed           &xrarr;           0.792</a></li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#" onclick="GameManager.setGameStart('Johnson'); myPlay();">
+                <div>
+                <img src="../img/tank/johnson.jpg" title="Johnson" class="images">
+                <div><a id="voice" class="speaker" title="Johnson" onclick="playAudio('../music/hero-voices/johnsonvoice.ogg')">&#128266;</a></div>
+                </div>
+                <div class="tank-select">
+                    <h3>Johnson</h3>
+                    <ul>
+                        <li><a class="whitespace">HP                            &xrarr;          2890</a></li>
+                        <li><a class="whitespace">Physical Attack         &xrarr;          112</a></li>
+                        <li><a class="whitespace">Magic Power            &xrarr;           0</a></li>
+                        <li><a class="whitespace">Physical Defense     &xrarr;           25</a></li>
+                        <li><a class="whitespace">Magic Resistance    &xrarr;           15</a></li>
+                        <li><a class="whitespace">Attack Speed           &xrarr;           0.826</a></li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#" onclick="GameManager.setGameStart('Khufra'); myPlay();">
+                <div>
+                <img src="../img/tank/khufra.jpg" title="Khufra" class="images">
+                <div><a id="voice" class="speaker" title="Khufra" onclick="playAudio('../music/hero-voices/khufravoice.ogg')">&#128266;</a></div>
+                </div>
+                <div class="tank-select">
+                    <h3>Khufra</h3>
+                    <ul>
+                        <li><a class="whitespace">HP                            &xrarr;          2819</a></li>
+                        <li><a class="whitespace">Physical Attack         &xrarr;          135</a></li>
+                        <li><a class="whitespace">Magic Power            &xrarr;           0</a></li>
+                        <li><a class="whitespace">Physical Defense     &xrarr;           21</a></li>
+                        <li><a class="whitespace">Magic Resistance    &xrarr;           15</a></li>
+                        <li><a class="whitespace">Attack Speed           &xrarr;           0.792</a></li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#" onclick="GameManager.setGameStart('Lolita'); myPlay();">
+                <div>
+                <img src="../img/tank/lolita.jpg" title="Lolita" class="images">
+                <div><a id="voice" class="speaker" title="Lolita" onclick="playAudio('../music/hero-voices/lolitavoice.ogg')">&#128266;</a></div>
+                </div>
+                <div class="tank-select">
+                    <h3>Lolita</h3>
+                    <ul>
+                        <li><a class="whitespace">HP                            &xrarr;          2890</a></li>
+                        <li><a class="whitespace">Physical Attack         &xrarr;          112</a></li>
+                        <li><a class="whitespace">Magic Power            &xrarr;           0</a></li>
+                        <li><a class="whitespace">Physical Defense     &xrarr;           25</a></li>
+                        <li><a class="whitespace">Magic Resistance    &xrarr;           15</a></li>
+                        <li><a class="whitespace">Attack Speed           &xrarr;           0.826</a></li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#" onclick="GameManager.setGameStart('Minotaur'); myPlay();">
+                <div>
+                <img src="../img/tank/minotaur.jpg" title="Minotaur" class="images">
+                <div><a id="voice" class="speaker" title="Minotaur" onclick="playAudio('../music/hero-voices/minotaurvoice.ogg')">&#128266;</a></div>
+                </div>
+                <div class="tank-select">
+                    <h3>Minotaur</h3>
+                    <ul>
+                        <li><a class="whitespace">HP                            &xrarr;          2819</a></li>
+                        <li><a class="whitespace">Physical Attack         &xrarr;          135</a></li>
+                        <li><a class="whitespace">Magic Power            &xrarr;           0</a></li>
+                        <li><a class="whitespace">Physical Defense     &xrarr;           21</a></li>
+                        <li><a class="whitespace">Magic Resistance    &xrarr;           15</a></li>
+                        <li><a class="whitespace">Attack Speed           &xrarr;           0.792</a></li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#" onclick="GameManager.setGameStart('Ruby'); myPlay();">
+                <div>
+                <img src="../img/fighter/ruby.jpg" title="Ruby" class="images">
+                <div><a id="voice" class="speaker" title="Ruby" onclick="playAudio('../music/hero-voices/rubyvoice.ogg')">&#128266;</a></div>
+                </div>
+                <div class="fighter-select">
+                    <h3>Ruby</h3>
+                    <ul>
+                        <li><a class="whitespace">HP                            &xrarr;          2708</a></li>
+                        <li><a class="whitespace">Physical Attack         &xrarr;          121</a></li>
+                        <li><a class="whitespace">Magic Power            &xrarr;           0</a></li>
+                        <li><a class="whitespace">Physical Defense     &xrarr;           23</a></li>
+                        <li><a class="whitespace">Magic Resistance    &xrarr;           10</a></li>
+                        <li><a class="whitespace">Attack Speed           &xrarr;           0.845</a></li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#" onclick="GameManager.setGameStart('Tigreal'); myPlay();">
+                <div>
+                <img src="../img/tank/tigreal.jpg" title="Tigreal" class="images">
+                <div><a id="voice" class="speaker" title="Tigreal" onclick="playAudio('../music/hero-voices/tigrealvoice.ogg')">&#128266;</a></div>
+                </div>
+                <div class="tank-select">
+                    <h3>Tigreal</h3>
+                    <ul>
+                        <li><a class="whitespace">HP                            &xrarr;          2890</a></li>
+                        <li><a class="whitespace">Physical Attack         &xrarr;          112</a></li>
+                        <li><a class="whitespace">Magic Power            &xrarr;           0</a></li>
+                        <li><a class="whitespace">Physical Defense     &xrarr;           25</a></li>
+                        <li><a class="whitespace">Magic Resistance    &xrarr;           15</a></li>
+                        <li><a class="whitespace">Attack Speed           &xrarr;           0.826</a></li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#" onclick="GameManager.setGameStart('Uranus'); myPlay();">
+                <div>
+                <img src="../img/tank/uranus.jpg" title="Uranus" class="images">
+                <div><a id="voice" class="speaker" title="Uranus" onclick="playAudio('../music/hero-voices/uranusvoice.ogg')">&#128266;</a></div>
+                </div>
+                <div class="tank-select">
+                    <h3>Uranus</h3>
+                    <ul>
+                        <li><a class="whitespace">HP                            &xrarr;          2819</a></li>
+                        <li><a class="whitespace">Physical Attack         &xrarr;          135</a></li>
+                        <li><a class="whitespace">Magic Power            &xrarr;           0</a></li>
+                        <li><a class="whitespace">Physical Defense     &xrarr;           21</a></li>
+                        <li><a class="whitespace">Magic Resistance    &xrarr;           15</a></li>
+                        <li><a class="whitespace">Attack Speed           &xrarr;           0.792</a></li>
+                    </ul>
+                </div>
+            </a>
+        </div>
+        <div class="action-btn">
+        </div>
+        <div class="enemy">
+        </div>
+        <hr class="hr-color">
+        <div class="footer">
+            <p> Dalangin, 2020</p>
+            <p class="moonton">&#169;<a href="https://m.mobilelegends.com/en"> Mobile Legends</a> &amp; <a href="https://www.moonton.com/#/home">Moonton</a></p>
+        </div>
+        
+    </body>
+</html>

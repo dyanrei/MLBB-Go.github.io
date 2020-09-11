@@ -1,0 +1,330 @@
+	case "Miya":
+              player = new Player(heroSelect, 2524, 129, 0, 17, 10, 0.859); 
+        break;            
+            case "Layla":
+              player = new Player(heroSelect, 2500, 130, 0, 15, 10, 0.882); 
+        break;
+            case "Fanny":
+              player = new Player(heroSelect, 2526, 126, 0, 17, 10, 0.891); 
+        break;
+            case "Saber":
+              player = new Player(heroSelect, 2599, 118, 0, 17, 10, 0.872); 
+        break;
+            case "Chou":
+              player = new Player(heroSelect, 2708, 121, 0, 23, 10, 0.845); 
+        break;
+            case "Zilong":
+              player = new Player(heroSelect, 2689, 123, 0, 25, 10, 0.962); 
+        break;
+            case "Valir":
+              player = new Player(heroSelect, 2516, 110, 15, 18, 10, 0.823); 
+        break;
+            case "Lunox":
+              player = new Player(heroSelect, 2521, 115, 18, 15, 10, 0.816); 
+        break;
+            case "Tigreal":
+              player = new Player(heroSelect, 2890, 112, 0, 25, 15, 0.826); 
+        break;
+            case "Atlas":
+              player = new Player(heroSelect, 2819, 135, 0, 21, 15, 0.792); 
+        break;
+            case "Kaja":
+              player = new Player(heroSelect, 2609, 120, 10, 30, 10, 0.843); 
+        break;
+            case "Faramis":
+              player = new Player(heroSelect, 3100, 115, 15, 20, 10, 0.887); 
+        break;
+	
+
+	-----------------------N E W--------------------------------
+	//heroSelect, HP, physicalAttack, magicPower, physicalDef, magicRes, attackSpeed	
+
+	case "Bruno":
+              player = new Player(heroSelect, 2522, 140, 0, 17, 10, 0.812); 
+        break;
+	case "Lesley":
+              player = new Player(heroSelect, 2490, 120, 0, 14, 10, 0.829); 
+        break;
+	case "Claude":
+              player = new Player(heroSelect, 2370, 115, 0, 14, 10, 0.831); 
+        break;
+	case "Clint":
+              player = new Player(heroSelect, 2530, 115, 0, 20, 10, 0.842); 
+        break;
+	case "Moskov":
+              player = new Player(heroSelect, 2530, 125, 0, 16, 10, 1.108); 
+        break;
+	case "Granger":
+              player = new Player(heroSelect, 2490, 138, 0, 15, 10, 0.799); 
+        break;
+	case "Popol and Kupa":
+              player = new Player(heroSelect, 2325, 105, 0, 17, 10, 0.801); 
+        break;
+	case "Hanabi":
+              player = new Player(heroSelect, 2510, 120, 0, 17, 10, 0.851); 
+        break;
+	case "Irithel":
+              player = new Player(heroSelect, 2540, 115, 0, 17, 10, 0.826); 
+        break;
+	case "Wanwan":
+              player = new Player(heroSelect, 2540, 110, 0, 18, 10, 0.786); 
+        break;
+	case "Karrie":
+              player = new Player(heroSelect, 2498, 112, 0, 21, 10, 0.839); 
+        break;
+	case "Kimmy":
+              player = new Player(heroSelect, 2480, 111, 0, 18, 10, 1.000); 
+        break;
+	case "Yi Sun-Shin":
+                player = new Player(heroSelect, 2520, 124, 0, 18, 10, 0.897); 
+            break;
+
+
+	-----------------------N E W--------------------------------
+	//heroSelect, HP, physicalAttack, magicPower, physicalDef, magicRes, attackSpeed
+
+	case "Gusion":
+              player = new Player(heroSelect, 2578, 110, 18, 17, 10, 0.892); 
+        break;
+	case "Hanzo":
+              player = new Player(heroSelect, 2594, 118, 0, 17, 10, 0.877); 
+        break;
+	case "Hayabusa":
+              player = new Player(heroSelect, 2629, 117, 0, 17, 10, 0.854); 
+        break;
+	case "Helcurt":
+              player = new Player(heroSelect, 2559, 121, 0, 17, 10, 0.878); 
+        break;
+	case "Karina":
+              player = new Player(heroSelect, 2490, 110, 11, 20, 10, 0.911); 
+        break;
+	case "Lancelot":
+              player = new Player(heroSelect, 2549, 124, 0, 16, 10, 0.876); 
+        break;
+	case "Ling":
+              player = new Player(heroSelect, 2578, 135, 0, 18, 10, 0.802); 
+        break;
+	case "Selena":
+              player = new Player(heroSelect, 2401, 110, 15, 15, 10, 0.804); 
+        break;
+	case "Natalia":
+              player = new Player(heroSelect, 2589, 121, 0, 18, 10, 0.834); 
+        break;
+
+	-----------------------N E W--------------------------------
+	//heroSelect, HP, physicalAttack, magicPower, physicalDef, magicRes, attackSpeed
+	
+	    case "Akai":
+              player = new Player(heroSelect, 2769, 129, 0, 22, 10, 0.836); 
+        break;            
+            case "Alpha":
+              player = new Player(heroSelect, 2646, 121, 0, 20, 10, 0.916); 
+        break;
+            case "Alucard":
+              player = new Player(heroSelect, 2821, 123, 0, 21, 10, 0.979); 
+        break;
+            case "Argus":
+                player = new Player(heroSelect, 2628, 124, 0, 21, 10, 0.916); 
+        break;
+            case "Badang":
+                player = new Player(heroSelect, 2708, 120, 0, 20, 10, 0.831); 
+        break;
+            case "Bane":
+                player = new Player(heroSelect, 2559, 117, 0, 23, 10, 0.853); 
+        break;
+            case "Moskov":
+                player = new Player(heroSelect, 2530, 125, 0, 16, 10, 1.108); 
+        break;
+            case "Granger":
+                player = new Player(heroSelect, 2490, 138, 0, 15, 10, 0.799); 
+        break;
+            case "Popol and Kupa":
+                player = new Player(heroSelect, 2325, 105, 0, 17, 10, 0.801); 
+        break;
+            case "Hanabi":
+                player = new Player(heroSelect, 2510, 120, 0, 17, 10, 0.851); 
+        break;
+            case "Irithel":
+                player = new Player(heroSelect, 2540, 115, 0, 17, 10, 0.826); 
+        break;
+            case "Wanwan":
+                player = new Player(heroSelect, 2540, 110, 0, 18, 10, 0.786); 
+        break;
+            case "Karrie":
+                player = new Player(heroSelect, 2498, 112, 0, 21, 10, 0.839); 
+        break;
+            case "Kimmy":
+                player = new Player(heroSelect, 2480, 111, 0, 18, 10, 1.000); 
+        break;
+	    case "Yi Sun-Shin":
+                player = new Player(heroSelect, 2520, 124, 0, 18, 10, 0.897); 
+        break;
+
+
+	-----------------------N E W--------------------------------
+
+//heroSelect, HP, physicalAttack, magicPower, physicalDef, magicRes, attackSpeed
+
+	    case "Alice":
+              player = new Player(heroSelect, 2573, 114, 10, 21, 10, 0.803); 
+        break;            
+            case "Aurora":
+              player = new Player(heroSelect, 2441, 105, 15, 17, 10, 1.01); 
+        break;
+            case "Cecilion":
+              player = new Player(heroSelect, 2425, 105, 18, 23, 10, 0.833); 
+        break;
+            case "Chang'e":
+                player = new Player(heroSelect, 2301, 115, 11, 16, 10, 0.808); 
+        break;
+            case "Cyclops":
+                player = new Player(heroSelect, 2521, 112, 19, 18, 10, 0.816); 
+        break;
+            case "Esmeralda":
+                player = new Player(heroSelect, 2573, 114, 17, 21, 10, 0.808); 
+        break;
+            case "Eudora":
+                player = new Player(heroSelect, 2524, 112, 14, 19, 10, 0.799); 
+        break;
+            case "Gord":
+                player = new Player(heroSelect, 2478, 110, 19, 23, 10, 0.772); 
+        break;
+            case "Harith":
+                player = new Player(heroSelect, 2701, 115, 14, 22, 10, 0.867); 
+        break;
+            case "Harley":
+                player = new Player(heroSelect, 2501, 114, 15, 19, 10, 0.896); 
+        break;
+            case "Kadita":
+                player = new Player(heroSelect, 2556, 105, 19, 18, 10, 0.804); 
+        break;
+            case "Kagura":
+                player = new Player(heroSelect, 2498, 118, 19, 20, 10, 0.816); 
+        break;
+            case "Luo Yi":
+                player = new Player(heroSelect, 2601, 107, 18, 20, 10, 0.792); 
+        break;
+	    case "Lylia":
+              player = new Player(heroSelect, 2501, 113, 18, 17, 10, 0.808); 
+        break;            
+            case "Odette":
+              player = new Player(heroSelect, 2491, 105, 21, 18, 10, 0.813); 
+        break;
+            case "Pharsa":
+              player = new Player(heroSelect, 2421, 109, 19, 17, 10, 0.791); 
+        break;
+            case "Vale":
+                player = new Player(heroSelect, 2401, 109, 18, 19, 10, 0.828); 
+        break;
+            case "Vexana":
+                player = new Player(heroSelect, 2421, 112, 18, 17, 10, 0.999); 
+        break;
+            case "Zhask":
+                player = new Player(heroSelect, 2401, 107, 15, 21, 10, 0.809); 
+        break;
+
+	-----------------------N E W--------------------------------
+
+//heroSelect, HP, physicalAttack, magicPower, physicalDef, magicRes, attackSpeed
+
+	    case "Alice":
+              player = new Player(heroSelect, 2573, 114, 10, 21, 10, 0.803); 
+        break;            
+            case "Aurora":
+              player = new Player(heroSelect, 2441, 105, 15, 17, 10, 1.01); 
+        break;
+            case "Cecilion":
+              player = new Player(heroSelect, 2425, 105, 18, 23, 10, 0.833); 
+        break;
+            case "Chang'e":
+                player = new Player(heroSelect, 2301, 115, 11, 16, 10, 0.808); 
+        break;
+            case "Cyclops":
+                player = new Player(heroSelect, 2521, 112, 19, 18, 10, 0.816); 
+        break;
+            case "Esmeralda":
+                player = new Player(heroSelect, 2573, 114, 17, 21, 10, 0.808); 
+        break;
+            case "Eudora":
+                player = new Player(heroSelect, 2524, 112, 14, 19, 10, 0.799); 
+        break;
+            case "Gord":
+                player = new Player(heroSelect, 2478, 110, 19, 23, 10, 0.772); 
+        break;
+            case "Harith":
+                player = new Player(heroSelect, 2701, 115, 14, 22, 10, 0.867); 
+        break;
+            case "Harley":
+                player = new Player(heroSelect, 2501, 114, 15, 19, 10, 0.896); 
+        break;
+            case "Kadita":
+                player = new Player(heroSelect, 2556, 105, 19, 18, 10, 0.804); 
+        break;
+            case "Kagura":
+                player = new Player(heroSelect, 2498, 118, 19, 20, 10, 0.816); 
+        break;
+            case "Luo Yi":
+                player = new Player(heroSelect, 2601, 107, 18, 20, 10, 0.792); 
+        break;
+
+
+	case "Akai":
+              player = new Player(heroSelect, 2769, 115, 0, 24, 15, 0.851); 
+        break;            
+            case "Baxia":
+              player = new Player(heroSelect, 2769, 125, 0, 24, 16, 0.802); 
+        break;
+            case "Belerick":
+              player = new Player(heroSelect, 2819, 110, 0, 15, 20, 0.815); 
+        break;
+            case "Franco":
+                player = new Player(heroSelect, 2709, 116, 0, 25, 14, 0.826); 
+        break;
+            case "Gatotkaca":
+                player = new Player(heroSelect, 2629, 120, 0, 20, 16, 0.818); 
+        break;
+	    case "Grock":
+                player = new Player(heroSelect, 2819, 135, 0, 21, 15, 0.811); 
+        break;
+            case "Hilda":
+                player = new Player(heroSelect, 2789, 123, 0, 24, 14, 0.842); 
+        break;
+            case "Hylos":
+                player = new Player(heroSelect, 3109, 105, 0, 17, 17,0.822); 
+        break;
+            case "Johnson":
+                player = new Player(heroSelect, 2809, 112, 0, 27, 13, 0.826); 
+        break;
+            case "Khufra":
+                player = new Player(heroSelect, 2709, 117, 0, 20, 17, 0.807); 
+        break;
+            case "Lolita":
+                player = new Player(heroSelect, 2579, 115, 0, 27, 14, 0.786); 
+        break;
+            case "Minotaur":
+                player = new Player(heroSelect, 2709, 123, 0, 18, 16, 0.732); 
+        break;
+            case "Uranus":
+                player = new Player(heroSelect, 2689, 115, 0, 14, 20, 0.831); 
+        break;
+        
+        
+        
+            case "Angela":
+              player = new Player(heroSelect, 2421, 115, 9, 15, 10, 0.792); 
+        break;            
+            case "Carmilla":
+              player = new Player(heroSelect, 2378, 118, 11, 16, 13, 0.807); 
+        break;
+            case "Diggie":
+              player = new Player(heroSelect, 2351, 115, 8, 18, 10, 0.805); 
+        break;
+            case "Estes":
+                player = new Player(heroSelect, 2221, 120, 8, 13, 10, 0.816); 
+        break;
+            case "Nana":
+                player = new Player(heroSelect, 2501, 115, 10, 17, 10, 0.864); 
+        break;
+            case "Rafaela":
+                player = new Player(heroSelect, 2441, 117, 9, 15, 10, 0.792); 
+        break;
