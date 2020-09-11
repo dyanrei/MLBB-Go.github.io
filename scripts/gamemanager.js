@@ -801,7 +801,6 @@ let GameManager = {
         var audio = new Audio();
         audio.src = "../music/pick-names/" + heroSelect + ".mp3";
         audio.play();
-        console.log(heroSelect);
         }
     
 //    search hero
