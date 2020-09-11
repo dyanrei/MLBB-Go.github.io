@@ -6,7 +6,7 @@ let GameManager = {
         //hero name sound
         function myPlay(heroSelect){
         var audio = new Audio();
-        audio.src = "../music/pick-names/" + heroSelect + ".mp3";
+        audio.src = "../music/pick-names/" + heroSelect.toLowerCase() + ".mp3";
         audio.play();
         }
     },
