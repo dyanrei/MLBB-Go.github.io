@@ -698,6 +698,13 @@ hr{
     font-size: 130%;
 }
 
+.attackResult p span.total{
+    text-align: center;
+    display:inline;
+    color: #ed1c24;
+    font-size: 130%;
+}
+
 .attackResultEnemy{
     text-align: center;
     font-family: 'Chelsea Market', cursive;
@@ -723,7 +730,7 @@ hr{
 .attackResultEnemy p span.total{
     text-align: center;
     display:inline;
-    color: #c71585;
+    color: #ed1c24;
     font-size: 130%;
 }
 
