@@ -657,9 +657,10 @@ hr{
 }
 
 .wrap{
-    width: 30%;
+    width: 50%;
     position: absolute;
-    margin-top: 5%;
+    margin-top: 7.5%;
+    margin-bottom: 2%;
     left: 50%;
     transform: translate(-50%, -50%);
     visibility: visible;
