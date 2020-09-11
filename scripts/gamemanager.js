@@ -2,9 +2,7 @@ let GameManager = {
     setGameStart : function(heroSelect){
         this.resetPlayer(heroSelect);
         this.setPreFight();
-        myPlay(heroSelect);
     },
-    
     resetPlayer : function(heroSelect){
         switch(heroSelect){
                 
