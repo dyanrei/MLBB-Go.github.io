@@ -2,6 +2,13 @@ let GameManager = {
     setGameStart : function(heroSelect){
         this.resetPlayer(heroSelect);
         this.setPreFight();
+        myPlay(heroSelect);
+        //hero name sound
+        function myPlay(heroSelect){
+        var audio = new Audio();
+        audio.src = "../music/pick-names/" + heroSelect + ".mp3";
+        audio.play();
+        }
     },
     resetPlayer : function(heroSelect){
         switch(heroSelect){
@@ -745,6 +752,7 @@ let GameManager = {
 
         }
         
+        
         getHeader.innerHTML = '<div class="header"><h2>A wild ' + enemy.enemySelect + ' has appeared</h2><h4>Defeat the enemy!</h4></h2></div>';
         getActionButton.innerHTML = '<br><br><div align="center"><a class="btn-fight" rel="nofollow" onclick="playerMoves.calcAttack(); fightSound();"><span>Attack the Enemy!&nbsp;</a></div>';
         getImageAction.style.backgroundImage = "url(../img/class/attack.gif)";
@@ -794,12 +802,6 @@ let GameManager = {
             setTimeout( function() { window.location = "select-character/select-all.html" }, 600 );
         }
         
-        //hero name sound
-        function myPlay(heroSelect){
-        var audio = new Audio();
-        audio.src = "../music/pick-names/" + heroSelect + ".mp3";
-        audio.play();
-        }
     
 //    search hero
         $(document).ready(function () {
