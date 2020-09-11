@@ -720,6 +720,13 @@ hr{
     font-size: 130%;
 }
 
+.attackResultEnemy p span.total{
+    text-align: center;
+    display:inline;
+    color: #c71585;
+    font-size: 130%;
+}
+
 hr.hr-color {
     margin-top: 5%;
     margin-left: 5%;

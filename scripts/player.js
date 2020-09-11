@@ -69,7 +69,7 @@ let playerMoves = {
         let playerAttackValues = playerAttack();
         let totalDamage = playerAttackValues[0] * playerAttackValues[1];
         enemy.HP = enemy.HP - totalDamage;
-        getAttackResultPlayer.innerHTML = "<p>You hit <span>" + playerAttackValues[0] + "</span> damage <span>" + playerAttackValues[1] + "</span> times. Total Damage: <span>" + totalDamage + "</span></p>";
+        getAttackResultPlayer.innerHTML = "<p>You hit <span>" + playerAttackValues[0] + "</span> damage <span>" + playerAttackValues[1] + "</span> times. Total Damage: <span class='total'>" + totalDamage + "</span></p>";
             
             if(enemy.HP <= 0){
                 getHeader.innerHTML = '<div class="header"><h1>Victory!</h1><a href="../index.html"><h6>&lt;&lt;Go back to main menu&lt;&lt;</h6></a></div>';
@@ -91,7 +91,7 @@ let playerMoves = {
                 let enemyAttackValues = enemyAttack();
                 let totalDamage = enemyAttackValues[0] * enemyAttackValues[1];
         player.HP = player.HP - totalDamage;
-        getAttackResultEnemy.innerHTML = "<p>Enemy hit <span>" + enemyAttackValues[0] + "</span> damage <span>" + enemyAttackValues[1] + "</span> times. Total Damage: <span>" + totalDamage + "</span></p>";
+        getAttackResultEnemy.innerHTML = "<p>Enemy hit <span>" + enemyAttackValues[0] + "</span> damage <span>" + enemyAttackValues[1] + "</span> times. Total Damage: <span class='total'>" + totalDamage + "</span></p>";
             
                     if(player.HP <= 0){
                         getHeader.innerHTML = '<div class="header"><h1>Defeat!</h1><a href="../index.html"><h6>&lt;&lt;Go back to main menu&lt;&lt;</h6></a></div>';
@@ -117,7 +117,7 @@ let playerMoves = {
         let enemyAttackValues = enemyAttack();
         let totalDamage = enemyAttackValues[0] * enemyAttackValues[1];
         player.HP = player.HP - totalDamage;
-        getAttackResultPlayer.innerHTML = "<p>Enemy hit <span>" + enemyAttackValues[0] + "</span> damage <span>" + enemyAttackValues[1] + "</span> times. Total Damage: <span>" + totalDamage + "</span></p>";
+        getAttackResultPlayer.innerHTML = "<p>Enemy hit <span>" + enemyAttackValues[0] + "</span> damage <span>" + enemyAttackValues[1] + "</span> times. Total Damage: <span class='total'>" + totalDamage + "</span></p>";
             
             if(player.HP <= 0){
                 getHeader.innerHTML = '<div class="header"><h1>Defeat!</h1><a href="../index.html"><h6>&lt;&lt;Go back to main menu&lt;&lt;</h6></a></div>';
@@ -139,7 +139,7 @@ let playerMoves = {
                 let playerAttackValues = playerAttack();
                 let totalDamage = playerAttackValues[0] * playerAttackValues[1];
         enemy.HP = enemy.HP - totalDamage;
-        getAttackResultEnemy.innerHTML = "<p>You hit <span>" + playerAttackValues[0] + "</span> damage <span>" + playerAttackValues[1] + "</span> times. Total Damage: <span>" + totalDamage + "</span></p>";
+        getAttackResultEnemy.innerHTML = "<p>You hit <span>" + playerAttackValues[0] + "</span> damage <span>" + playerAttackValues[1] + "</span> times. Total Damage: <span class='total'>" + totalDamage + "</span></p>";
             
                     if(enemy.HP <= 0){
                         getHeader.innerHTML = '<div class="header"><h1>Victory!</h1><a href="../index.html"><h6>&lt;&lt;Go back to main menu&lt;&lt;</h6></a></div>';
