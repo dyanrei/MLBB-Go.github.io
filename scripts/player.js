@@ -84,6 +84,7 @@ let playerMoves = {
                     var audioVoice = new Audio('../music/announcer/victory.mp3');
                     audioVoice.play();
                     }, 1600)
+                $('html,body').scrollTop(0);
             } else {
                 getEnemyHealth.innerHTML = 'HP                            &xrarr;          ' + enemy.HP;
                 
@@ -102,10 +103,11 @@ let playerMoves = {
                         var audio = new Audio('../music/announcer/slained.mp3');
                     audio.play();
         
-                setTimeout(function(){
-                    var audioVoice = new Audio('../music/announcer/defeat.mp3');
-                    audioVoice.play();
-                    }, 1600)
+                    setTimeout(function(){
+                        var audioVoice = new Audio('../music/announcer/defeat.mp3');
+                        audioVoice.play();
+                        }, 1600)
+                    $('html,body').scrollTop(0);
                     } else {
                         getPlayerHealth.innerHTML = 'HP                            &xrarr;          ' + player.HP;
                     }
@@ -132,6 +134,7 @@ let playerMoves = {
                     var audioVoice = new Audio('../music/announcer/defeat.mp3');
                     audioVoice.play();
                 }, 1600)
+                $('html,body').scrollTop(0);
             } else {
                 getPlayerHealth.innerHTML = 'HP                            &xrarr;          ' + player.HP;
                 
@@ -150,10 +153,11 @@ let playerMoves = {
                         var audio = new Audio('../music/announcer/slain.mp3');
                             audio.play();
         
-                            setTimeout(function(){
+                        setTimeout(function(){
                             var audioVoice = new Audio('../music/announcer/victory.mp3');
                             audioVoice.play();
                             }, 1600)
+                        $('html,body').scrollTop(0);
                     } else { 
                         getEnemyHealth.innerHTML = 'HP                            &xrarr;          ' + enemy.HP;
             }
